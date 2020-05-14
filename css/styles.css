@@ -1,0 +1,61 @@
+/* ===================================== 
+   BASE
+======================================== */
+body {
+   overflow-x: hidden;
+ }
+/* ===================================== 
+   JUMBOTRON
+======================================== */
+.jumbotron{
+   background-image: url('../img/venice.jpg');
+   background-size: cover;
+   min-height: 100vh;
+   background-position: center;
+ }
+
+ footer{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   right: 1%
+ }
+ 
+ h3{
+    color:  #a9a9a9;
+    text-align: center;
+ }
+ /*
+ footer code https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/
+ */
+
+/* ===================================== 
+  Images
+======================================== */
+ img{
+   border: solid grey 1px;
+ }
+
+/* ===================================== 
+  LINKS
+======================================== */
+a,
+p a{
+   word-break: break-all; 
+}
+
+/* ===================================== 
+   SVG
+======================================== */
+svg{
+   width: 25px; 
+   height: 25px; 
+}
+
+.gmail{
+   fill: red;
+}
+
+.linkedin{
+   fill: lightsteelblue; 
+}
