@@ -1,0 +1,285 @@
+/* ===================================== 
+  BASE STYLES
+======================================== */
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik';
+}
+
+body {
+  background-color: mintcream;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.main-header,
+.container,
+footer {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.header,
+.intro,
+.quotes,
+.desc,
+blockquote,
+.main-nav .nav-btn,
+.project-title,
+.project-desc,
+.project-desc li,
+.resume {
+  text-align: center;
+}
+
+.main-nav li,
+.card li,
+.project-card li {
+  list-style: none;
+}
+
+/* links to sections of the site and external links */
+.main-nav a,
+.svg-container a,
+.project-card a,
+.link,
+.certification {
+  text-decoration: none;
+}
+
+.main-nav a,
+.svg-container a {
+  display: block;
+}
+
+.main-nav,
+.project-desc,
+.svg-container {
+  padding-left: 0;
+}
+
+/* navigation links */
+.main-nav .nav-btn {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3385ff;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+.main-nav .active {
+  background-color: #f2f2ed;
+  color: #3b80d1;
+}
+
+/* containers */
+.wrapper {
+  min-height: calc(100vh - 312px);
+}
+
+/* about page */
+blockquote,
+.statement {
+  font-family: fantasy;
+}
+
+blockquote::before {
+  content: open-quote;
+}
+
+.card,
+.project-card {
+  box-shadow: 0 5px 10px darkgrey;
+}
+
+blockquote::after {
+  content: close-quote;
+}
+
+/* projects page */
+.project-desc,
+.links-container,
+.svg-container {
+  display: flex;
+}
+
+.project-desc {
+  flex-direction: column;
+}
+
+.links-container {
+  justify-content: space-around;
+}
+
+/* =========FOOTER & SVGs========= */
+.svg-container {
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svg-container li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+footer svg {
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 5px auto;
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-it {
+  100% {
+    fill: #8a2be2;
+  }
+}
+
+@keyframes fill-in {
+  100% {
+    fill: #3385ff;
+  }
+}
+
+@keyframes colored {
+  100% {
+    fill: #ff1a1a;
+  }
+}
+
+@keyframes color-in {
+  100% {
+    fill: #33cc33;
+  }
+}
+
+.github,
+.gmail,
+.linkedIn,
+.phone {
+  stroke-width: 0.2;
+}
+
+.github {
+  stroke: #8a2be2;
+  stroke-dasharray: 139;
+  stroke-dashoffset: 139;
+  animation: offset 4s linear forwards, fill-it 4s 4s forwards;
+}
+
+.gmail {
+  stroke: #ff1a1a;
+  stroke-dasharray: 117;
+  stroke-dashoffset: 117;
+  animation: offset 4s linear forwards, colored 4s 4s forwards;
+}
+
+.linkedIn {
+  stroke: #87cefa;
+  stroke-dasharray: 197;
+  stroke-dashoffset: 197;
+  animation: offset 8s linear forwards, fill-in 4s 4s forwards;
+}
+
+.phone {
+  stroke: #33cc33;
+  stroke-dasharray: 66;
+  stroke-dashoffset: 66;
+  animation: offset 5s linear forwards, color-in 4s 4s forwards;
+}
+
+.project-desc a,
+footer a:visited,
+.link,
+.certification {
+  color: blue;
+}
+
+/* =========PROJECTS PAGE========= */
+.img,
+.project-img,
+.card-img {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* ===================================== 
+   MEDIA QUERIES
+======================================== */
+@media (min-width: 768px) {
+  .main-nav,
+  .skills-container {
+    display: flex;
+  }
+
+  .main-nav li {
+    flex-grow: 1;
+  }
+
+  .skills-container {
+    justify-content: space-around;
+  }
+
+  .main-header,
+  .container,
+  footer {
+    width: 80%;
+  }
+
+  /* ====ABOUT PAGE & PROJECTS PAGE==== */
+  .card-img {
+    float: left;
+  }
+
+  .card,
+  .project-card {
+    box-shadow: 0 5px 10px darkgrey;
+    display: flex;
+  }
+
+  .clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+
+  .project-title {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    min-height: calc(100vh - 78px);
+  }
+
+  .card,
+  .project-card {
+    max-width: 700px;
+    margin: 20px auto;
+  }
+
+  .main-header,
+  .container,
+  footer {
+    width: 75%;
+    max-width: 1150px;
+  }
+
+  .svg-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
