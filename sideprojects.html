@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Side projects</title>
+</head>
+
+<body class="sideprojects-pg">
+  <header>
+    <div class="main-header">
+      <!-- LOGO -->
+      <div class="topnav">
+        <a href="/" class="site-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" preserveAspectRatio="xMidYMid"
+            style="background:transparent" viewBox="182.817 14.3 134.366 121.4">
+            <defs>
+              <filter id="a" width="300%" height="300%" x="-100%" y="-100%">
+                <feMorphology in="SourceGraphic" operator="dilate" radius="2" result="border" />
+                <feFlood flood-color="#fff" result="black" />
+                <feMorphology in="SourceGraphic" operator="dilate" radius="2" result="erode" />
+                <feGaussianBlur in="erode" result="blur" stdDeviation="4" />
+                <feOffset dx="2" dy="2" in="blur" result="offset" />
+                <feComposite in="offset" in2="black" operator="atop" result="merge" />
+                <feComposite in="merge" in2="SourceGraphic" operator="in" result="inner-shadow" />
+                <feGaussianBlur in="SourceGraphic" result="shadow1" stdDeviation="2.5" />
+                <feOffset dy="5" in="shadow1" result="shadow" />
+                <feSpecularLighting in="SourceGraphic" lighting-color="#fff" result="specular" specularConstant="100"
+                  specularExponent="10" surfaceScale="1.5">
+                  <fePointLight x="250" y="-300" z="-400" />
+                </feSpecularLighting>
+                <feGaussianBlur in="specular" result="specular2" stdDeviation="1" />
+                <feComposite in="specular2" in2="SourceAlpha" operator="in" result="specular3" />
+                <feMerge result="merge">
+                  <feMergeNode in="border" />
+                  <feMergeNode in="inner-shadow" />
+                  <feMergeNode in="specular3" />
+                </feMerge>
+                <feComponentTransfer in="merge" result="final">
+                  <feFuncA slope=".9" type="linear" />
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode in="shadow" />
+                  <feMergeNode in="final" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g filter="url(#a)">
+              <path stroke="#fff" stroke-width="1.5"
+                d="M251.695 76.345q0 27.26-29.56 27.26-4.74 0-12.55-1.15l7.17-37.82q.51-2.56.83-4.03 9.73-.71 14.05-.71t8.29.9q3.97.89 6.59 2.88 5.18 3.9 5.18 12.67Zm-13.18-2.37q0-9.53-6.85-9.53h-.64q-.32 0-.64.06l-6.59 34.37q.26.13.51.13h.51q2.37 0 4.84-1.48 2.46-1.47 4.38-4.48 4.48-6.97 4.48-19.07Zm46.27 24.55q-2.69 2.72-6.37 4.19-3.68 1.47-7.32 1.47-3.65 0-4.93-.64l-1.99 10.88-12.99 1.28 8.83-45.44 10.44-1.09-.84 4.42q2.69-4.55 8.26-4.55 6.27 0 9.6 4.04 2.94 3.64 2.94 9.21t-1.47 9.54q-1.47 3.97-4.16 6.69Zm-14.46-17.96-3.39 18.76q1.34 1.15 3 1.15 1.67 0 2.63-.64t1.66-1.92q1.92-3.46 3.46-13.95.45-3.08.45-6.08 0-3.01-.68-3.97-.67-.96-1.95-.96-3.9 0-5.18 7.61Z" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- MOBILE ICONS -->
+        <img src="images/hamburger.svg" class="mobile-icon" alt="mobile">
+      </div>
+
+      <!-- NAVIGATION -->
+      <div class="main-nav">
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/index.html#abt">About</a></li>
+          <li><a href="/index.html#prjts">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="top-section">
+    <div class="section-heading">
+      <h1>
+        Side Projects
+      </h1>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <div class="projects-sub">
+      <p>Please feel free to look through my side projects, I enjoy developing projects that helps others.</p>
+    </div>
+
+    <!----------PROJECTS ------------------>
+    <div class="project-section">
+      <!-- project cards -->
+      <div class="card">
+        <div class="img-container">
+          <img src="images/icc.jpeg" alt="project">
+        </div>
+        <p>Inclusive Care Colorado</p>
+        <p>A health directory landing page for users to get involved and to learn more about the organization.</p>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <img src="images/provider.jpeg" alt="shopify">
+        </div>
+        <p>Inclusive Care Colorado provider search</p>
+        <p>A health directory web application for users to search for medical providers.
+        </p>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <img src="images/feld.jpeg" alt="shopify">
+        </div>
+        <p>Tool Finder</p>
+        <p>A web directory of resources to assist designers and developers for web development and design needs.</p>
+      </div>
+    </div>
+
+    <!----------FOOTER ------------------>
+    <footer id="contact">
+      <ul class="nav">
+        <li><a href="resume/DPRES22.pdf" download="">Resume</a></li>
+        <li><a href="https://github.com/DanielekPark">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/daniel-park-70878119a/">Linkedin</a></li>
+        <li><a href="mailto:daniel.ek.park@gmail.com">daniel.ek.park@gmail.com</a></li>
+      </ul>
+      </div>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

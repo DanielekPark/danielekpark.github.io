@@ -1,0 +1,686 @@
+/* ================================= 
+BASE STYLES
+==================================== */
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #797e83;
+  font-size: 16px;
+  font-family: Epilogue, "Lato",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+  line-height: 1.5;
+  background: hsla(0, 5%, 5%, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================================= 
+NAVIGATION
+==================================== */
+
+.main-header {
+  color: black;
+}
+
+.main-header,
+.top-section,
+.typewriter h1,
+.main-content,
+.img-container img,
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tech h2,
+.main-nav {
+  display: none;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 1rem 1rem 0;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a,
+.bdr-line,
+.side-projects,
+.img-container img {
+  display: block;
+}
+
+.mobile-icon:hover {
+  cursor: pointer;
+}
+
+body,
+ul,
+li,
+.side-projects h2 {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: #656a6e;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+header .nav a {
+  font-size: 1.5rem;
+}
+
+.nav li,
+.top-section p,
+.projects-sub p,
+.about-sub p,
+.bio p,
+.tech-section p,
+footer p {
+  line-height: 2;
+}
+
+/*========== FLEXBOX ==========*/
+.main-header,
+.nav,
+.topnav,
+.section-heading,
+.welcome,
+.svg-wrapper,
+.arrow-wrapper,
+.project-section,
+.about-section,
+.tech {
+  display: flex;
+}
+
+.main-header,
+.main-nav .nav {
+  flex-direction: column;
+}
+
+.topnav,
+.section-heading,
+.arrow-wrapper {
+  align-items: center;
+}
+
+.topnav,
+footer .nav,
+.tech {
+  justify-content: space-between;
+}
+
+.top-section,
+.main-content {
+  margin: 2.5rem auto 0;
+}
+
+/* SIDEPROJECTS PAGE */
+.sideprojects-pg .main-content {
+  margin-top: 0;
+}
+
+.top-section h1 {
+  font-size: 3rem;
+}
+
+.top-section p,
+.projects-sub p,
+.about-sub p,
+.bio p,
+.tech-section p,
+footer p {
+  font-size: 1.125rem;
+}
+
+.top-section .section-heading {
+  white-space: unset;
+  margin-bottom: 0;
+}
+
+.top-section .section-heading>p {
+  display: none;
+}
+
+/* ================================= 
+  HEADING SECTION
+==================================== */
+.section-heading {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading,
+.arrow-wrapper a {
+  white-space: nowrap;
+}
+
+.arrow-wrapper a {
+  display: flex;
+  align-items: center;
+  /* fix cursor later */
+}
+
+.arrow-wrapper a::after,
+.side-projects h2::after {
+  content: url("data: image/svg+xml;base64,ICAgICAgICAgICAgPHN2ZyBmaWxsPSIjNzk3ZTgzIiBzdHJva2Utd2lkdGg9IjAiIHZpZXdCb3g9IjAgMCAxNiAxNiIgaGVpZ2h0PSIzNiIgd2lkdGg9IjM2IgogICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiCiAgICAgICAgICAgICAgICBkPSJNOSAxMy44ODdsNS01VjguMThsLTUtNS0uNzA3LjcwNyA0LjE0NiA0LjE0N0gydjFoMTAuNDRMOC4yOTIgMTMuMThsLjcwNy43MDd6Ij48L3BhdGg+CiAgICAgICAgICAgIDwvc3ZnPg==");
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+.arrow {
+  transform: rotate(45deg);
+}
+
+.bdr-line {
+  width: 100%;
+  background-color: #797e83;
+  height: 1px;
+  margin-left: 0.5rem;
+}
+
+/* sticky header when client scrolls */
+.sticky-header {
+  position: fixed;
+  background-color: transparent;
+  left: 5%;
+  top: 0;
+}
+
+/* ======= GEAR AND HAMMER =========== */
+.svg-wrapper {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* TYPING ANIMATION */
+@keyframes typing {
+  0% {
+    width: 0
+  }
+
+  100% {
+    width: 100%
+  }
+}
+
+/* BLINKING ANIMATION */
+@keyframes blink {
+  0% {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: white
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15rem solid white;
+  white-space: nowrap;
+  letter-spacing: .1rem;
+  animation:
+    typing 7s forwards,
+    blink 0.7s infinite;
+  font-size: 1rem;
+}
+
+.welcome svg {
+  width: 50%;
+}
+
+.gear-icon,
+.gear-bg,
+.hammer-bg,
+.hammer-icon {
+  transform-origin: 50% 50%;
+}
+
+.gear-icon,
+.hammer-icon {
+  transform-box: fill-box;
+}
+
+@keyframes movehr {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+.swing {
+  animation: movehr 1.7s infinite linear;
+}
+
+.rotate {
+  animation: spin 7s infinite linear;
+}
+
+
+/* ================================= 
+  MAIN CONTENT
+==================================== */
+.welcome,
+.project-section,
+.about-section {
+  flex-wrap: wrap;
+}
+
+/* ================================= 
+  PROJECTS
+==================================== */
+.jumbotron,
+.project-section,
+.about-section {
+  margin-top: 2rem;
+}
+
+.project-section .img-container {
+  padding: 0.2rem;
+  overflow: hidden;
+}
+
+.side-projects {
+  align-self: flex-start;
+  width: 1rem;
+}
+
+.side-projects h2 {
+  writing-mode: vertical-lr;
+}
+
+.side-projects h2::after {
+  transform: rotate(135deg);
+}
+
+.side-projects .arrow {
+  transform: rotate(130deg);
+}
+
+.img-container img {
+  object-fit: contain;
+  height: 250px;
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+.project-section .img-container {
+  transition-property: transform;
+}
+
+.project-section .img-container img:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  margin-bottom: 3rem;
+  margin-left: auto;
+  width: 90%;
+}
+
+/* SIDEPROJECTS PAGE CARD */
+.sideprojects-pg .card {
+  margin: 0 auto 3rem;
+}
+
+
+/* ================================= 
+  ABOUT 
+==================================== */
+.about-section {
+  flex-direction: row-reverse;
+}
+
+.about-section>.img-container,
+.tech-section {
+  margin-right: auto;
+}
+
+.bio {
+  margin-bottom: 1.5rem;
+}
+
+/* =========== TECHNOLOGIES ============*/
+.tech {
+  padding-top: 1rem
+}
+
+.tech-section svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* ================================= 
+  FOOTER
+==================================== */
+footer div {
+  margin-bottom: 2rem;
+}
+
+footer .nav {
+  margin-bottom: 3.5rem;
+}
+
+footer .nav a {
+  font-size: 0.9rem;
+}
+
+/* ================================= 
+  MEDIA QUERIES
+==================================== */
+@media (min-width: 768px) {
+
+  /* ===== NAVIGATION ===== */
+  .main-header,
+  .top-section,
+  .main-content,
+  footer .container {
+    width: 90%;
+  }
+
+  .main-header {
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-header,
+  .wrapper,
+  .projects-sub,
+  .about-sub,
+  .svg-wrapper {
+    display: flex;
+  }
+
+  .main-nav,
+  .topnav {
+    width: 50%;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+  .main-nav .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .mobile-icon {
+    display: none;
+  }
+
+  .top-section .section-heading,
+  .top-section .section-heading+div {
+    width: 60%;
+  }
+
+  header .nav a {
+    font-size: 1.3rem;
+  }
+
+  .typewriter,
+  .svg-wrapper {
+    margin-left: auto;
+  }
+
+  .typewriter {
+    align-self: center;
+  }
+
+  .typewriter h1 {
+    font-size: 1.2rem;
+  }
+
+  .svg-wrapper {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .svg-wrapper svg {
+    height: 10rem;
+    width: 20rem;
+  }
+
+  .about-sub,
+  .projects-sub {
+    margin-left: 3rem;
+  }
+
+  /* SIDEPROJECTS PAGE */
+  .sideprojects-pg .projects-sub p {
+    width: 50%;
+  }
+
+  .sideprojects-pg .main-content {
+    margin: 2.5rem auto 0;
+  }
+
+  .sideprojects-pg .projects-sub {
+    margin-left: 0;
+  }
+
+  .sideprojects-pg .project-section {
+    justify-content: space-between;
+  }
+
+  .sideprojects-pg .card {
+    margin: 0 0 3rem;
+  }
+
+  .about-sub>p,
+  .about-sub>.arrow-wrapper,
+  .projects-sub>p,
+  .projects-sub>.arrow-wrapper,
+  .bio {
+    width: 40%;
+  }
+
+  .about-sub>.arrow-wrapper,
+  .projects-sub>.arrow-wrapper {
+    align-items: flex-start;
+  }
+
+  .projects-sub>.arrow-wrapper {
+    margin: 0 auto;
+  }
+
+  .welcome .arrow-wrapper a::after {
+    transform: rotate(90deg);
+  }
+
+  .projects-sub .arrow-wrapper a::after,
+  .about-sub .arrow-wrapper a::after {
+    transform: rotate(135deg);
+  }
+
+  .about-sub .arrow-wrapper {
+    margin: 0 auto;
+  }
+
+  .about-sub>p,
+  .projects-sub>p {
+    margin-top: 0;
+  }
+
+  .about-sub h2,
+  .projects-sub h2 {
+    margin: 0 0 0 1.5rem;
+  }
+
+  .card,
+  .about-section .img-container {
+    width: 45%;
+  }
+
+  .card:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bio,
+  .tech-section,
+  .container .section-heading+div {
+    margin-left: 3rem;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .main-header,
+  .project-section {
+    justify-content: space-between;
+  }
+
+  .main-nav,
+  .top-section .section-heading,
+  .top-section .section-heading+div {
+    width: 40%;
+  }
+
+  section .jumbotron {
+    margin-top: 0;
+  }
+
+  .main-header,
+  .top-section,
+  .main-content,
+  footer .container {
+    max-width: 1140px;
+  }
+
+  /* SIDEPROJECTS PAGE */
+
+  aside,
+  .top-section,
+  .top-section .section-heading {
+    display: flex;
+  }
+
+  section .jumbotron,
+  .top-section .section-heading,
+  .top-section .section-heading>p {
+    display: block;
+  }
+
+  .top-section .section-heading,
+  .welcome {
+    flex-direction: column;
+  }
+
+  .top-section .section-heading {
+    margin-top: 0;
+  }
+
+  .top-section .section-heading>p {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  .welcome .arrow-wrapper a::after {
+    transform: rotate(135deg);
+  }
+
+  aside {
+    margin-left: auto;
+  }
+
+  aside p {
+    display: none;
+  }
+
+  .svg-wrapper {
+    order: 1;
+  }
+
+  .typewriter,
+  footer .nav {
+    margin-top: 2rem;
+  }
+
+  .typewriter {
+    order: 2;
+  }
+
+  .welcome .arrow-wrapper {
+    order: 3;
+  }
+
+  .welcome .arrow-wrapper,
+  .typewriter {
+    margin-left: 1.5rem;
+  }
+
+  .svg-wrapper {
+    margin-right: auto;
+  }
+
+  .card,
+  .card:last-child {
+    margin: 0;
+    width: 30%;
+  }
+
+  .projects-sub p,
+  .about-sub p {
+    width: 50%;
+  }
+
+  .projects-sub>.arrow-wrapper {
+    justify-content: flex-end;
+  }
+
+  .about-section .img-container {
+    margin-right: 0;
+  }
+
+  .bio,
+  footer .section-heading+div {
+    width: 45%
+  }
+
+  footer .nav a {
+    font-size: 1.25rem;
+  }
+
+  .sideprojects-pg footer {
+    margin-top: 5rem;
+  }
+}

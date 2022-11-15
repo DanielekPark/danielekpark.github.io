@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Daniel Park</title>
+</head>
+
+<body class="home">
+  <header>
+    <div class="main-header">
+      <!-- LOGO -->
+      <div class="topnav">
+        <a href="/" class="site-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" preserveAspectRatio="xMidYMid"
+            style="background:transparent" viewBox="182.817 14.3 134.366 121.4">
+            <defs>
+              <filter id="a" width="300%" height="300%" x="-100%" y="-100%">
+                <feMorphology in="SourceGraphic" operator="dilate" radius="2" result="border" />
+                <feFlood flood-color="#fff" result="black" />
+                <feMorphology in="SourceGraphic" operator="dilate" radius="2" result="erode" />
+                <feGaussianBlur in="erode" result="blur" stdDeviation="4" />
+                <feOffset dx="2" dy="2" in="blur" result="offset" />
+                <feComposite in="offset" in2="black" operator="atop" result="merge" />
+                <feComposite in="merge" in2="SourceGraphic" operator="in" result="inner-shadow" />
+                <feGaussianBlur in="SourceGraphic" result="shadow1" stdDeviation="2.5" />
+                <feOffset dy="5" in="shadow1" result="shadow" />
+                <feSpecularLighting in="SourceGraphic" lighting-color="#fff" result="specular" specularConstant="100"
+                  specularExponent="10" surfaceScale="1.5">
+                  <fePointLight x="250" y="-300" z="-400" />
+                </feSpecularLighting>
+                <feGaussianBlur in="specular" result="specular2" stdDeviation="1" />
+                <feComposite in="specular2" in2="SourceAlpha" operator="in" result="specular3" />
+                <feMerge result="merge">
+                  <feMergeNode in="border" />
+                  <feMergeNode in="inner-shadow" />
+                  <feMergeNode in="specular3" />
+                </feMerge>
+                <feComponentTransfer in="merge" result="final">
+                  <feFuncA slope=".9" type="linear" />
+                </feComponentTransfer>
+                <feMerge>
+                  <feMergeNode in="shadow" />
+                  <feMergeNode in="final" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g filter="url(#a)">
+              <path stroke="#fff" stroke-width="1.5"
+                d="M251.695 76.345q0 27.26-29.56 27.26-4.74 0-12.55-1.15l7.17-37.82q.51-2.56.83-4.03 9.73-.71 14.05-.71t8.29.9q3.97.89 6.59 2.88 5.18 3.9 5.18 12.67Zm-13.18-2.37q0-9.53-6.85-9.53h-.64q-.32 0-.64.06l-6.59 34.37q.26.13.51.13h.51q2.37 0 4.84-1.48 2.46-1.47 4.38-4.48 4.48-6.97 4.48-19.07Zm46.27 24.55q-2.69 2.72-6.37 4.19-3.68 1.47-7.32 1.47-3.65 0-4.93-.64l-1.99 10.88-12.99 1.28 8.83-45.44 10.44-1.09-.84 4.42q2.69-4.55 8.26-4.55 6.27 0 9.6 4.04 2.94 3.64 2.94 9.21t-1.47 9.54q-1.47 3.97-4.16 6.69Zm-14.46-17.96-3.39 18.76q1.34 1.15 3 1.15 1.67 0 2.63-.64t1.66-1.92q1.92-3.46 3.46-13.95.45-3.08.45-6.08 0-3.01-.68-3.97-.67-.96-1.95-.96-3.9 0-5.18 7.61Z" />
+            </g>
+          </svg>
+        </a>
+
+        <!-- MOBILE ICONS -->
+        <img src="images/hamburger.svg" class="mobile-icon" alt="mobile">
+      </div>
+
+      <!-- NAVIGATION -->
+      <div class="main-nav">
+        <ul class="nav">
+          <li><a href="#abt">About</a></li>
+          <li><a href="#prjts">Projects</a></li>
+          <li><a href="/sideprojects.html">Side Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="top-section">
+
+    <div class="section-heading">
+      <h1>
+        I build applications and web sites.
+      </h1>
+      <p>
+        I'm a fontend developer that tinkers with technology and enjoys collaborating with others.
+      </p>
+    </div>
+    <aside>
+      <div>
+        <p>
+          I'm a fontend developer that tinkers with technology and enjoys collaborating with others.
+        </p>
+      </div>
+
+      <div class="jumbotron">
+        <!------- TYPING ---------->
+        <div class="welcome">
+          <div class="arrow-wrapper">
+            <a href="#">
+              <h2>See my work</h2>
+            </a>
+          </div>
+          <div class="typewriter">
+            <h1>Hi I'm Daniel, let's build something together.</h1>
+          </div>
+          <!------- ICONS ---------->
+          <div class="svg-wrapper">
+            <!------- HAMMER ---------->
+            <svg class="swing" xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 400 200">
+              <g class="hammer">
+                <circle class="hammer-bg" fill="#FFD466" cx="200" cy="50" r="90"></circle>
+                <path class="hammer-icon" fill="#FFFFFF" d="M262,32.9l-6.7-6.9c-1.4-1.4-3.6-1.4-5-0.1l-2.8,2.8l-14.6-15c-7-7.2-20.3-18.5-30.1-16.4
+      		c-1.6,0.3-5.6,3.1-5.6,3.1l19,19.5l-26.3,25.6l-1.5-1.6c-1.4-1.4-3.6-1.4-5-0.1l-39.3,38.3c-1.4,1.4-1.4,3.6-0.1,5l14.4,14.8
+      		c1.4,1.4,3.6,1.4,5,0.1l39.3-38.3c1.4-1.4,1.4-3.6,0.1-5l-1.5-1.6l26.3-25.6l8.3,8.5l-2.8,2.8c-1.4,1.4-1.4,3.6-0.1,5l6.7,6.9
+      		c1.4,1.4,3.6,1.4,5,0.1l17.3-16.9C263.3,36.5,263.4,34.3,262,32.9z"></path>
+              </g>
+            </svg>
+
+            <!-------- GEAR ---------->
+            <svg class="rotate" xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 400 200">
+              <g class="gear">
+                <circle class="gear-bg" fill="#bdc3c7" cx="200" cy="50" r="90"></circle>
+                <path fill="white" d="M231.9,10.9c-1.8-0.6-3.6-0.6-5.1,0.3L216.2,17c-1.5-0.9-3-1.2-4.2-1.8l-3.1-11.5
+      		c-0.6-1.8-1.8-3-3.3-3.9c-1.8-0.6-3.3-0.9-5.1-0.9c-1.8,0-3.3,0.3-5.1,0.9c-0.9,0.3-1.2,0.6-1.8,1.2s-1.2,1.8-1.5,2.7l-3,11.5
+      		c-1.5,0.3-3,1.2-4.2,1.8L174,11.3c-1.5-0.9-3.3-0.9-5.1-0.3c-2.4,0.6-3.9,2.1-4.8,3c-1.5,1.5-2.4,3-3,4.2c-0.6,1.8-0.6,3.6,0.3,5.1
+      		l5.8,10.6c-0.6,1.2-1.5,2.7-1.8,4.2l-11.8,3.4c-0.9,0.3-1.5,0.9-2.1,1.5c-0.6,0.6-1.2,1.2-1.2,1.8c-0.9,1.5-1.2,3-1.2,4.8
+      		c0,2.4,0.3,3.9,1.2,5.4c0.3,1.5,1.8,3,3.3,3.3l11.5,3c0.6,1.8,1.5,3.3,2.1,4.5l-5.6,10.7c-0.9,1.5-0.9,3.3-0.3,5.1s1.8,3,3,4.2
+      		c1.2,1.2,2.7,2.1,4.2,3c1.8,0.6,3.6,0.6,5.1-0.3l10.3-6.1c1.5,0.9,3,1.2,4.2,1.8l3.4,11.8c0.6,1.8,1.8,3,3.3,3.9
+      		c1.8,0.6,3.3,0.9,5.1,0.9c1.8,0,3.6-0.6,5.1-0.9c0.6-0.6,1.5-0.9,2.1-1.5c0.6-0.6,1.2-1.8,1.5-2.7l3-11.5c1.5-0.3,3-1.2,4.2-1.8
+      		l10.6,5.7c1.5,0.9,3.3,0.9,5.1,0.3c1.8-0.6,3.3-2.1,4.2-3c1.5-1.5,2.4-3,3-4.2c0.6-1.8,0.6-3.6-0.3-5.1l-5.8-10.6
+      		c0.6-1.2,1.2-3,1.8-4.2l11.5-3.1c0.9-0.3,1.8-0.6,2.7-1.5c0.6-0.6,1.2-1.2,1.2-1.8c0.6-1.8,0.9-3.3,0.9-5.1c0-1.8-0.3-3.3-0.9-5.1
+      		c-0.6-1.8-2.1-2.7-3.9-3.3l-11.5-3c-0.3-1.5-1.2-3-1.8-4.2l5.7-10.6c0.9-1.5,0.9-3.3,0.3-5.1c-0.6-1.8-1.8-3-3-4.2
+      		C234.6,12.4,233.1,11.5,231.9,10.9z M211.4,38.8c6.1,6,6.1,16.4,0.1,22.4s-16.3,6.1-22.4,0c-6.1-6.1-6.1-16.4-0.1-22.4
+      		S205,32.5,211.4,38.8z"></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <main class="main-content">
+    <div class="section-heading">
+      <span id="prjts">Projects</span>
+      <hr class="bdr-line">
+    </div>
+
+    <div class="projects-sub">
+      <p>Feel free to peruse some projects that I have worked on.</p>
+      <div class="arrow-wrapper">
+        <a href="/#prjts">
+          <h2>My work</h2>
+        </a>
+      </div>
+    </div>
+
+    <!----------PROJECTS ------------------>
+    <div class="project-section">
+      <!-- project cards -->
+      <a href="/sideprojects.html" class="side-projects">
+        <h2>Side projects</h2>
+      </a>
+      <div class="card">
+        <div class="img-container">
+          <img src="images/3bd.jpg" alt="project">
+        </div>
+        <p>A contract position to develop a career page for an entertainment known as 3 Blackdot. </p>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <img src="images/shopify.jpeg" alt="shopify">
+        </div>
+        <p>Independent contract work, to develop an e-commerce store for earbuds and speakers company using Shopify.
+        </p>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <img src="images/shopify.jpeg" alt="shopify">
+        </div>
+        <p>Independent contract work, to develop an e-commerce store for clothing company using Shopify.</p>
+      </div>
+    </div>
+
+    <!----------ABOUT ------------------>
+    <div class="section-heading">
+      <span id="abt">About</span>
+      <hr class="bdr-line">
+    </div>
+
+    <div class="about-sub">
+      <p>Get a glimpse of who I am. Feel free to ask questions.</p>
+      <div class="arrow-wrapper">
+        <a href="#">
+          <h2>A little more about me</h2>
+        </a>
+      </div>
+    </div>
+    <div class="about-section">
+      <div class="img-container">
+        <img src="images/dp.jpeg" alt="project">
+      </div>
+      <div class="bio">
+        <p>
+          Who I am
+        </p>
+        <p>
+          My name is Daniel Park, I live in sunny Los Angeles, California. I am CSUN graduate but I transitioned into
+          web development. I learned the fundamentals of web development through Team Treehouse.
+        </p>
+        <p>
+          My specialty is with frontend web development, I have knowledge of other technologies including
+          Express.js, SQL, Shopify, and Git.</p>
+        <p>
+          I enjoy the process of building projects and tinkering with with various technologies.
+        </p>
+      </div>
+
+      <div class="tech-section">
+        <p>Some of the technologies that I've used</p>
+        <!-- TECH ICONS-->
+        <div class="tech">
+          <div class="">
+            <svg class="" role="img" fill="#E34F26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>HTML5</title>
+              <path
+                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z" />
+            </svg>
+          </div>
+          <div>
+            <svg role="img" fill="#F7DF1E" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>JavaScript</title>
+              <path
+                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z" />
+            </svg>
+          </div>
+          <div>
+            <h2 class="">React</h2>
+            <svg class="" fill="#61DAFB" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>React</title>
+              <path
+                d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z" />
+            </svg>
+          </div>
+          <div>
+            <svg role="img" fill="#06B6D4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Tailwind CSS</title>
+              <path
+                d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z" />
+            </svg>
+          </div>
+          <div>
+            <svg role="img" fill="#7AB55C" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Shopify</title>
+              <path
+                d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z" />
+            </svg>
+          </div>
+          <div>
+            <svg role="img" fill="#3178C6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>TypeScript</title>
+              <path
+                d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z" />
+            </svg>
+          </div>
+          <div>
+            <svg role="img" fill="#F05032" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <title>Git</title>
+              <path
+                d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!----------FOOTER ------------------>
+  <footer id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <span>Contact</span>
+        <hr class="bdr-line">
+      </div>
+
+      <div>
+        <p>
+          Please don't hesitate to contact me if you have any questions. My mom and my friends say I'm a nice person.
+        </p>
+      </div>
+
+      <ul class="nav">
+        <li><a href="resume/DPRES22.pdf" download>Resume</a></li>
+        <li><a href="https://github.com/DanielekPark">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/daniel-park-70878119a/">Linkedin</a></li>
+        <li><a href="mailto:daniel.ek.park@gmail.com">daniel.ek.park@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>
