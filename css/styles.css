@@ -607,12 +607,12 @@ footer .nav a {
 
   .top-section .section-heading {
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 
-  .top-section .section-heading>p {
-    margin-top: auto;
-    margin-bottom: 0;
-  }
+  /* .top-section .section-heading>p {} */
 
   .welcome .arrow-wrapper a::after {
     transform: rotate(135deg);
