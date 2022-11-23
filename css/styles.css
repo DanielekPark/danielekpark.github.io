@@ -56,6 +56,7 @@ footer .container {
 .topnav a,
 .bdr-line,
 .side-projects,
+.img-container,
 .img-container img {
   display: block;
 }
@@ -587,15 +588,19 @@ footer .nav a {
   }
 
   /* SIDEPROJECTS PAGE */
-
   aside,
   .top-section,
   .top-section .section-heading {
     display: flex;
   }
 
+  .sideprojects-pg .project-section {
+    margin-top: 3rem;
+  }
+
   section .jumbotron,
   .top-section .section-heading,
+  .sideprojects-pg .top-section .section-heading,
   .top-section .section-heading>p {
     display: block;
   }
@@ -607,12 +612,8 @@ footer .nav a {
 
   .top-section .section-heading {
     margin-top: 0;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
   }
-
-  /* .top-section .section-heading>p {} */
 
   .welcome .arrow-wrapper a::after {
     transform: rotate(135deg);
