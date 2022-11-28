@@ -611,8 +611,9 @@ footer .nav a {
   }
 
   .top-section .section-heading {
+    display: flex;
     margin-top: 0;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .welcome .arrow-wrapper a::after {
