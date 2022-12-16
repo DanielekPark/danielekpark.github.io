@@ -26,7 +26,6 @@ html {
 /* ================================= 
 NAVIGATION
 ==================================== */
-
 .main-header {
   color: black;
 }
@@ -102,7 +101,6 @@ footer p {
 .main-header,
 .nav,
 .topnav,
-.section-heading,
 .welcome,
 .svg-wrapper,
 .arrow-wrapper,
@@ -134,6 +132,10 @@ footer .nav,
   margin: 2.5rem auto 0;
 }
 
+.main-content {
+  padding-top: 0.1rem;
+}
+
 /* SIDEPROJECTS PAGE */
 .sideprojects-pg .main-content {
   margin-top: 0;
@@ -157,10 +159,6 @@ footer p {
   margin-bottom: 0;
 }
 
-.top-section .section-heading>p {
-  display: none;
-}
-
 /* ================================= 
   HEADING SECTION
 ==================================== */
@@ -177,7 +175,6 @@ footer p {
 .arrow-wrapper a {
   display: flex;
   align-items: center;
-  /* fix cursor later */
 }
 
 .arrow-wrapper a::after,
@@ -198,15 +195,16 @@ footer p {
   margin-left: 0.5rem;
 }
 
-/* sticky header when client scrolls */
+/* sticky header when client scrolls 
 .sticky-header {
   position: fixed;
   background-color: transparent;
   left: 5%;
   top: 0;
-}
+}*/
 
 /* ======= GEAR AND HAMMER =========== */
+
 .svg-wrapper {
   justify-content: center;
   margin-top: 2rem;
@@ -246,7 +244,7 @@ footer p {
 }
 
 .welcome svg {
-  width: 50%;
+  width: 33%;
 }
 
 .gear-icon,
@@ -262,9 +260,6 @@ footer p {
 }
 
 @keyframes movehr {
-  0% {
-    transform: rotate(0deg);
-  }
 
   50% {
     transform: rotate(45deg);
@@ -293,6 +288,19 @@ footer p {
   animation: spin 7s infinite linear;
 }
 
+.crane {
+  animation: lift 8s infinite;
+}
+
+@keyframes lift {
+  50% {
+    transform: translateY(50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 
 /* ================================= 
   MAIN CONTENT
@@ -359,7 +367,6 @@ footer p {
 .sideprojects-pg .card {
   margin: 0 auto 3rem;
 }
-
 
 /* ================================= 
   ABOUT 
@@ -470,8 +477,7 @@ footer .nav a {
   }
 
   .svg-wrapper {
-    flex-direction: column;
-    width: 50%;
+    width: 60%;
   }
 
   .svg-wrapper svg {
@@ -482,6 +488,10 @@ footer .nav a {
   .about-sub,
   .projects-sub {
     margin-left: 3rem;
+  }
+
+  .main-content {
+    padding-top: 0;
   }
 
   /* SIDEPROJECTS PAGE */
@@ -518,21 +528,14 @@ footer .nav a {
     align-items: flex-start;
   }
 
-  .projects-sub>.arrow-wrapper {
+  .projects-sub>.arrow-wrapper,
+  .about-sub .arrow-wrapper {
     margin: 0 auto;
-  }
-
-  .welcome .arrow-wrapper a::after {
-    transform: rotate(90deg);
   }
 
   .projects-sub .arrow-wrapper a::after,
   .about-sub .arrow-wrapper a::after {
     transform: rotate(135deg);
-  }
-
-  .about-sub .arrow-wrapper {
-    margin: 0 auto;
   }
 
   .about-sub>p,
@@ -548,11 +551,6 @@ footer .nav a {
   .card,
   .about-section .img-container {
     width: 45%;
-  }
-
-  .card:last-child {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .bio,
@@ -578,6 +576,29 @@ footer .nav a {
 
   section .jumbotron {
     margin-top: 0;
+  }
+
+  .welcome svg:first-child {
+    width: 90%;
+  }
+
+  .welcome svg:nth-child(2),
+  .welcome svg:nth-child(3) {
+    width: 50%;
+  }
+
+  @keyframes lift {
+    25% {
+      transform: translateX(-50%);
+    }
+
+    50% {
+      transform: translateX(0%);
+    }
+
+    75% {
+      transform: translateY(-50%);
+    }
   }
 
   .main-header,
@@ -610,6 +631,10 @@ footer .nav a {
     flex-direction: column;
   }
 
+  .welcome {
+    height: 100%;
+  }
+
   .top-section .section-heading {
     display: flex;
     margin-top: 0;
@@ -624,12 +649,8 @@ footer .nav a {
     margin-left: auto;
   }
 
-  aside p {
-    display: none;
-  }
-
-  .svg-wrapper {
-    order: 1;
+  .svg-wrapper .welcome {
+    flex-wrap: wrap;
   }
 
   .typewriter,
@@ -638,24 +659,26 @@ footer .nav a {
   }
 
   .typewriter {
-    order: 2;
+    order: 1;
+    margin-top: 2rem;
   }
 
   .welcome .arrow-wrapper {
-    order: 3;
+    order: 2;
+    margin: 0 auto;
   }
 
-  .welcome .arrow-wrapper,
   .typewriter {
     margin-left: 1.5rem;
   }
 
   .svg-wrapper {
+    flex-wrap: wrap;
     margin-right: auto;
   }
 
-  .card,
-  .card:last-child {
+  .sideprojects-pg .card,
+  .sideprojects-pg .card:last-child {
     margin: 0;
     width: 30%;
   }
