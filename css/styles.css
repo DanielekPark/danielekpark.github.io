@@ -210,6 +210,12 @@ footer p {
   margin-top: 2rem;
 }
 
+.svg-wrapper svg,
+.arrow-wrapper a::after,
+.side-projects h2::after {
+  transition-property: transform;
+}
+
 /* TYPING ANIMATION */
 @keyframes typing {
   0% {
@@ -478,6 +484,7 @@ footer .nav a {
 
   .svg-wrapper {
     width: 60%;
+    margin-bottom: 0.5rem;
   }
 
   .svg-wrapper svg {
