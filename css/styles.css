@@ -684,11 +684,11 @@ footer .nav a {
     margin-right: auto;
   }
 
-  .sideprojects-pg .card,
+  /* .sideprojects-pg .card,
   .sideprojects-pg .card:last-child {
     margin: 0;
     width: 30%;
-  }
+  } */
 
   .projects-sub p,
   .about-sub p {
