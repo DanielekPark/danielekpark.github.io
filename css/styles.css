@@ -615,13 +615,14 @@ footer .nav a {
     max-width: 1140px;
   }
 
-  /* SIDEPROJECTS PAGE */
   aside,
   .top-section,
   .top-section .section-heading {
     display: flex;
   }
 
+
+  /* SIDEPROJECTS PAGE */
   .sideprojects-pg .project-section {
     margin-top: 3rem;
   }
@@ -650,6 +651,11 @@ footer .nav a {
 
   .welcome .arrow-wrapper a::after {
     transform: rotate(135deg);
+  }
+
+  .section-heading > p, 
+  .welcome .arrow-wrapper h2  {
+    margin: 0;
   }
 
   aside {
