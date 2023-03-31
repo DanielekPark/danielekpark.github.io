@@ -20,33 +20,33 @@
             style="background:transparent" viewBox="182.817 14.3 134.366 121.4">
             <defs>
               <filter id="a" width="300%" height="300%" x="-100%" y="-100%">
-                <feMorphology in="SourceGraphic" operator="dilate" radius="2" result="border" />
-                <feFlood flood-color="#fff" result="black" />
-                <feMorphology in="SourceGraphic" operator="dilate" radius="2" result="erode" />
-                <feGaussianBlur in="erode" result="blur" stdDeviation="4" />
-                <feOffset dx="2" dy="2" in="blur" result="offset" />
-                <feComposite in="offset" in2="black" operator="atop" result="merge" />
-                <feComposite in="merge" in2="SourceGraphic" operator="in" result="inner-shadow" />
-                <feGaussianBlur in="SourceGraphic" result="shadow1" stdDeviation="2.5" />
-                <feOffset dy="5" in="shadow1" result="shadow" />
-                <feSpecularLighting in="SourceGraphic" lighting-color="#fff" result="specular" specularConstant="100"
+                <femorphology in="SourceGraphic" operator="dilate" radius="2" result="border" />
+                <feflood flood-color="#fff" result="black" />
+                <femorphology in="SourceGraphic" operator="dilate" radius="2" result="erode" />
+                <fegaussianblur in="erode" result="blur" stdDeviation="4" />
+                <feoffset dx="2" dy="2" in="blur" result="offset" />
+                <fecomposite in="offset" in2="black" operator="atop" result="merge" />
+                <fecomposite in="merge" in2="SourceGraphic" operator="in" result="inner-shadow" />
+                <fegaussianblur in="SourceGraphic" result="shadow1" stdDeviation="2.5" />
+                <feoffset dy="5" in="shadow1" result="shadow" />
+                <fespecularlighting in="SourceGraphic" lighting-color="#fff" result="specular" specularConstant="100"
                   specularExponent="10" surfaceScale="1.5">
-                  <fePointLight x="250" y="-300" z="-400" />
-                </feSpecularLighting>
-                <feGaussianBlur in="specular" result="specular2" stdDeviation="1" />
-                <feComposite in="specular2" in2="SourceAlpha" operator="in" result="specular3" />
-                <feMerge result="merge">
-                  <feMergeNode in="border" />
-                  <feMergeNode in="inner-shadow" />
-                  <feMergeNode in="specular3" />
-                </feMerge>
-                <feComponentTransfer in="merge" result="final">
-                  <feFuncA slope=".9" type="linear" />
-                </feComponentTransfer>
-                <feMerge>
-                  <feMergeNode in="shadow" />
-                  <feMergeNode in="final" />
-                </feMerge>
+                  <fepointlight x="250" y="-300" z="-400" />
+                </fespecularlighting>
+                <fegaussianblur in="specular" result="specular2" stdDeviation="1" />
+                <fecomposite in="specular2" in2="SourceAlpha" operator="in" result="specular3" />
+                <femerge result="merge">
+                  <femergenode in="border" />
+                  <femergenode in="inner-shadow" />
+                  <femergenode in="specular3" />
+                </femerge>
+                <fecomponenttransfer in="merge" result="final">
+                  <fefunca slope=".9" type="linear" />
+                </fecomponenttransfer>
+                <femerge>
+                  <femergenode in="shadow" />
+                  <femergenode in="final" />
+                </femerge>
               </filter>
             </defs>
             <g filter="url(#a)">
@@ -119,8 +119,15 @@
         <p>Exercise App</p>
         <p>A mobile app for exercise to help users to estimate strength and create exercise plans.</p>
       </div>
-    </div>
 
+      <div class="card">
+        <a href="https://patientmanagerlaunchv.vercel.app/" target="_blank" class="img-container">
+          <img src="images/patientmanager.jpeg" alt="project">
+        </a>
+        <p>Patient manager system</p>
+        <p>A web application to schedule, track, and assign patients to nurses.</p>
+      </div>
+    </div>
 
     <!----------FOOTER ------------------>
     <footer id="contact">
@@ -130,10 +137,9 @@
         <li><a href="https://www.linkedin.com/in/daniel-park-70878119a/">Linkedin</a></li>
         <li><a href="mailto:daniel.ek.park@gmail.com">daniel.ek.park@gmail.com</a></li>
       </ul>
-      </div>
     </footer>
-
-    <script src="scripts/app.js"></script>
+  </main>
+  <script src="scripts/app.js"></script>
 </body>
 
 </html>
