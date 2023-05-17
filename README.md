@@ -9,7 +9,7 @@ If you are curious about my work or if you would like to see my personal site pl
 Technologies used:
 - HTML
 - CSS
-- Javascript
+- JavaScript
 
 Icons links: 
 - [Technology icons](https://simpleicons.org/)
