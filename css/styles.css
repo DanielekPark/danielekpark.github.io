@@ -52,6 +52,13 @@ footer .container {
   font-size: 17px;
 }
 
+.home-logo {
+  height: 3rem;
+  width: 3rem;
+  display: block;
+}
+
+
 .topnav a,
 .bdr-line,
 .side-projects,
@@ -476,6 +483,7 @@ footer .nav a {
 
   .typewriter {
     align-self: center;
+    
   }
 
   .typewriter h1 {
@@ -569,7 +577,6 @@ footer .nav a {
 }
 
 @media (min-width: 1024px) {
-
   .main-header,
   .project-section {
     justify-content: space-between;
